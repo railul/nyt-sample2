@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-masthead: "UnifrakturMaguntia", Georgia, serif;
+  --font-headline: "Source Serif 4", "Playfair Display", Georgia, serif;
+  --font-body-serif: "Merriweather", Georgia, serif;
+  --font-sans-ui: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-lemonde-black: #121212;
+  --color-lemonde-charcoal: #1f242a;
+  --color-lemonde-dark-grey: #333333;
+  --color-lemonde-mid-grey: #666666;
+  --color-lemonde-light-grey: #8a8a8a;
+  --color-lemonde-border: #e2e4e6;
+  --color-lemonde-yellow: #ffc700;
+  --color-lemonde-yellow-hover: #eab308;
+  --color-lemonde-red: #c7171c;
+  --color-lemonde-blue: #184c78;
+}
+
+@layer base {
+  body {
+    color: #121212;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font-sans-ui);
+  }
+}
+
+/* Le Monde hairline borders */
+.lemonde-border-b {
+  border-bottom: 1px solid #e2e4e6;
+}
+
+.lemonde-border-t {
+  border-top: 1px solid #e2e4e6;
+}
+
+.lemonde-border-r {
+  border-right: 1px solid #e2e4e6;
+}
+
+/* Le Monde Yellow Accent indicator */
+.lemonde-subscriber-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+/* Micro-typography adjustments */
+.headline-serif {
+  font-family: "Source Serif 4", "Playfair Display", Georgia, serif;
+  letter-spacing: -0.015em;
+}
+
+/* Le Monde Drop cap for long-form reading */
+.editorial-drop-cap::first-letter {
+  font-family: "Source Serif 4", "Playfair Display", Georgia, serif;
+  font-size: 3.6rem;
+  line-height: 0.85;
+  float: left;
+  margin-top: 0.2rem;
+  margin-right: 0.6rem;
+  font-weight: 700;
+  color: #121212;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "The New York Times - International Edition",
+  "description": "Authentic, interactive digital edition of The New York Times featuring breaking news, multi-column editorial layouts, full article reader, opinion essays, audio listen mode, and section exploration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
